@@ -55,7 +55,7 @@ Below is quick code snippet of a `Go` file trying to connect to AWS RDS server. 
 
 ![GoCode](./assets/GoCode.png)
 
-### 3 : Commit
+### 3 : Commit 
 
 Commit your changes on a branch
 
