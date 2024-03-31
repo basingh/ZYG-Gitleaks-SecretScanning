@@ -53,7 +53,7 @@ brew install pre-commit
 
 Below is quick code snippet of a `Go` file trying to connect to AWS RDS server. *`A lot can go wrong here`*.
 
-![GoCode](./assets/GoCode.png)
+![GoCode](./assets/Code.png)
 
 ### 3 : Commit 
 
