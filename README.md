@@ -51,9 +51,9 @@ brew install pre-commit
 
 ### 2 :  Code
 
-Below is quick code snippet of a Go file trying to connect to AWS RDS server. *A lot can go wrong here*.
+Below is quick code snippet of a `Go` file trying to connect to AWS RDS server. *`A lot can go wrong here`*.
 
-![GoCode](./assets/Gocode.png)
+![GoCode](./assets/GoCode.png)
 
 ### 3 : Commit
 
@@ -67,7 +67,7 @@ Lets run Gitleaks and see if we accidentally committed any secret with this code
 
 ![Detect](./assets/Detect.png)
 
-As you can see Gitleaks has came up with two findings where we are accidentally committing out DB Password and AWS Access keys. It does great job with pinpointing the file, line, author and date so you can quickly check when this happened. 
+As you can see `Gitleaks` has came up with two findings where we are accidentally committing out `DB Password and AWS Access keys`. It does great job with pinpointing the file, line, author and date so you can quickly check when this happened. 
 
 If you are wondering how Gitleaks did that, its simple Regex match based on rules defined in [Gitleaks Config](https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml). You can update this or add your own rules based on your custom needs.
 
