@@ -1,4 +1,4 @@
-A demo how we can detect, protect and Prevent committing secrets on repositories using GitLeaks
+A demo on how we can Detect, Protect and Prevent committing secrets on repositories using GitLeaks
 
 ---
 Title: "Enhancing Repository Security with Gitleaks and Pre-commit: A Comprehensive Guide"
