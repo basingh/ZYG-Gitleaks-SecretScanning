@@ -10,7 +10,7 @@ date: "2024-04-01"
 
 ---
 <p align="center">
-<img src="./assets/SecretScanning.png" alt="drawing" width="200"/>
+<img src="./assets/secretscanning.png" alt="drawing" width="200"/>
 </p>
 
 # Enhancing Repository Security with Gitleaks and Pre-commit
