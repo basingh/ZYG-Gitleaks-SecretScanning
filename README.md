@@ -8,6 +8,9 @@ author: "Baljeet Singh"
 date: "2024-04-01"
 
 ---
+<p align="center">
+<img src="./assets/SecretScanning.png" alt="drawing" width="200"/>
+</p>
 
 # Enhancing Repository Security with Gitleaks and Pre-commit
 
@@ -52,19 +55,27 @@ brew install pre-commit
 
 Below is quick code snippet of a `Go` file trying to connect to AWS RDS server. *`A lot can go wrong here`*.
 
-![GoCode](./assets/Code.png)
+<p align="center">
+<img src="./assets/Code.png" alt="drawing" width="400"/>
+</p>
+
 
 ### 3 : Commit 
 
 Commit your changes on a branch
 
-![Commit](./assets/Commit.png)
+<p align="center">
+<img src="./assets/Commit.png" alt="drawing" width="400"/>
+</p>
 
 ### 4 : DETECT 
 
 Lets run Gitleaks and see if we accidentally committed any secret with this code. 
 
-![Detect](./assets/Detect.png)
+<p align="center">
+<img src="./assets/Detect.png" alt="drawing" width="400"/>
+</p>
+
 
 As you can see `Gitleaks` has came up with two findings where we are accidentally committing out `DB Password and AWS Access keys`. It does great job with pinpointing the file, line, author and date so you can quickly check when this happened. 
 
@@ -72,7 +83,9 @@ If you are wondering how Gitleaks did that, its simple Regex match based on rule
 
 For example, here the rule to capture AWS Access Token:
 
-![Rules](./assets/Rules.png)
+<p align="center">
+<img src="./assets/Rules.png" alt="drawing" width="400"/>
+</p>
 
 ### 5 : Protect
 
@@ -83,7 +96,9 @@ In this case, before you commit your changes to branch. You can run a `gitleaks 
 
 Here's a quick example of how it capture `dbPassword` secret which I changed in this branch and show warnings before I commit these changed. 
 
-![Protect](./assets/Protect.png)
+<p align="center">
+<img src="./assets/Protect.png" alt="drawing" width="400"/>
+</p>
 
 ### 6 : Prevent
 
@@ -103,7 +118,9 @@ repos:
 
 Great, now lets make changes to our `Go` file and try again:
 
-![Pre-Commit](./assets/Pre-Commit.png)
+<p align="center">
+<img src="./assets/Pre-Commit.png" alt="drawing" width="400"/>
+</p>
 
 As you can see above, Gitleaks reported `Failed` on my attempt to commit these files because of secret detected in our code. 
 
