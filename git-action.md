@@ -170,5 +170,3 @@ By integrating GitLeaks with GitHub Actions, you create a powerful defense again
 `Cherry on top? You can use this info to automatically rotate these secrets. Try it out!`
 
 Remember, in the realm of cybersecurity, prevention is always better than cure. This setup not only protects your sensitive information but also fosters a culture of security awareness within your team. Happy coding, and stay secure!
-
-
