@@ -21,8 +21,8 @@ func main() {
     connectionString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", dbUser, dbPassword, dbHost, dbPort, dbName)
 
     // Create dummy AWS credentials with placeholders for security
-    awsAccessKey := "AKIAIOSFODNN7EXAMPLEE"
-    awsSecretKey := "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEYY"
+    awsAccessKey := "XXXXXXXXXXXXXXXXXXX"
+    awsSecretKey := "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     creds := credentials.NewStaticCredentials(awsAccessKey, awsSecretKey, "")
 
     // Create an AWS session for RDS authentication (even though it's not used for connection)
